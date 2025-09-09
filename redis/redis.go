@@ -8,6 +8,9 @@ import (
 	"github.com/wb-go/wbf/retry"
 )
 
+// Nil обозначает отсутствие ключа в Redis.
+var Nil = redis.Nil
+
 // Client оборачивает Redis клиент.
 type Client struct {
 	*redis.Client
